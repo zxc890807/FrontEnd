@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OVERFLOW</title>
+		<style>
+			#box1 {
+				width: 100px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+			}
+			#box2 {
+				width: 100px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+				overflow: hidden;
+			}
+			#box3 {
+				width: 100px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+				overflow: clip;
+			}
+			#box4 {
+				width: 100px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+				overflow: scroll;
+			}
+			#box5 {
+				width: 100px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+				overflow: auto;
+			}
+			#box6 {
+				width: 300px;
+				height: 200px;
+				border: 1px solid;
+				margin-bottom: 150px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- visible hidden clip scroll auto -->
+		<h1>
+			overflow condition如下:
+			<br />內容超出物件範圍外，此時我們在CSS中可以決定overflow發生時的處理方式
+		</h1>
+		<div id="box1">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+		<h1>hidden</h1>
+		<div id="box2">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+		<h1>clip</h1>
+		<div id="box3">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+		<h1>scroll</h1>
+		<div id="box4">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+		<h1>auto</h1>
+		<div id="box5">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+		<h1>當沒有overflow，auto會自動把右側下拉bar隱藏</h1>
+		<div id="box6">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+				sed in corporis ullam modi dicta omnis aliquam, at ea veniam
+				porro assumenda tenetur ex beatae facere praesentium nam eaque
+				ipsa.
+			</p>
+		</div>
+	</body>
+</html>

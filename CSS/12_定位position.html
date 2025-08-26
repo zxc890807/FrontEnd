@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>定位position</title>
+		<style>
+			.item1 {
+				/* absolutec在捲動後會在原位置，隨著轉動而看不見 */
+				position: absolute;
+				top: 5px;
+				right: 100px;
+			}
+			.item3 {
+				/* sticky跟fixed效果很像，還不知道差異 */
+				position: sticky;
+				top: 50px;
+			}
+			.item6 {
+				/* fixed在捲動時候仍在當前頁面的固定位置，完全固定於畫面中某個位置 */
+				position: fixed;
+				top: 100px;
+				right: 100px;
+			}
+			.container {
+				width: 300px;
+				height: 800px;
+				border: 1px solid red;
+				position: relative; /* 加入此行得時候，container內的物件就會以container的位置當作參考點，否則會以整個頁面來計算位置 */
+			}
+			.item {
+				width: 50px;
+				height: 50px;
+				border: 3px solid orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item1">1</div>
+			<div class="item item2">2</div>
+			<div class="item item3">3</div>
+			<div class="item item4">4</div>
+			<div class="item item5">5</div>
+			<div class="item item6">6</div>
+			<div class="item item7">7</div>
+			<div class="item item8">8</div>
+			<div class="item item9">9</div>
+			<div class="item item10">10</div>
+			<div class="item item11">11</div>
+			<div class="item item12">12</div>
+		</div>
+	</body>
+</html>

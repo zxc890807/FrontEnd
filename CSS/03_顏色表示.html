@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CCS 的顏色</title>
+		<style>
+			body {
+				color: blue;
+			}
+			#p1 {
+				color: tomato;
+			}
+			#p2 {
+				/* 用 RGB 表示顏色 ， 可以直接點方塊選顏色*/
+				color: rgb(7, 212, 106);
+			}
+			#p3 {
+				/* 用 16 進制表示顏色 */
+				color: #ffffff;
+				background-color: #000000;
+			}
+			#p4 {
+				/* HSL，色調、飽和度、亮度 */
+				color: hsl(277, 52%, 51%);
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">p1</p>
+		<p id="p2">p2</p>
+		<p id="p3">p3</p>
+		<p id="p4">p4</p>
+	</body>
+</html>

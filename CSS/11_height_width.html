@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* *表示所有元素，底下這行的用意，是為了讓本來使用50% width的兩個box可以正確排列，
+			當沒有輸入底下這行的時候，因為計算了邊界的寬度，而導致box會因為邊界寬度而上下排列 */
+			* {
+				box-sizing: border-box;
+			}
+			.container {
+				height: 100vh;
+				background-color: gray;
+			}
+			.box {
+				width: 25%;
+				height: 100px;
+				border: 3px solid black;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">box1</div>
+			<div class="box">box2</div>
+			<div class="box">box3</div>
+			<div class="box">box4</div>
+		</div>
+	</body>
+</html>

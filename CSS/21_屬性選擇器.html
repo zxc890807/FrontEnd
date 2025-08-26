@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>屬性選擇器</title>
+        <style>
+            span[class]{
+                color:purple;
+            }
+            a[title]{
+                color: red;
+            }
+            a[href$=".pdf"]{
+                color: green;
+            }
+            /* $=代表結尾是.pdf，^=代表開頭是https，利用這個來建立規則選出連結中的href屬性符合的去做變更 */
+            a[href^="https"]{
+                color: pink;
+            }
+        </style>
+	</head>
+	<body>
+		<span class="class1">紫色段落</span>
+		<span class="class2">紫色段落2</span>
+		<span>非紫色段落</span>
+		<a href="http://www.google.com/?hl=zh_TW" title="google">紅色鏈結</a>
+		<a href="http://www.example.com/" title="example">紅色鏈結2</a>
+		<a href="C:\Users\tonytsai\Desktop\CODE\FrontEnd\src_folder\example.pdf">綠色鏈結</a>
+		<a href="https://www.google.com/?hl=zh_TW">粉紅色鏈結</a>></a>
+		<span class="class1 class2">紫色段落多類別</span>
+	</body>
+</html>

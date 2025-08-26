@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>單選&多選</title>
+	</head>
+	<body>
+		<!-- 要注意使用radio的時候搭配使用name，單選的情況下radio的name要一致
+         ，否則會被視為不同題目而變成選項都可選 -->
+		<form action="">
+			<ul>
+				<li>
+					<p>單選題1</p>
+					<label for="Y">
+						<input type="radio" name="q1" id="Y" value="yes" />
+						是
+					</label>
+					<label for="N">
+						<input type="radio" name="q1" id="N" value="no" />
+						否
+					</label>
+				</li>
+				<li>
+					<p>單選題2</p>
+					<label for="Y">
+						<input type="radio" name="q2" id="Y" value="yes" />
+						是
+					</label>
+					<label for="N">
+						<input type="radio" name="q2" id="N" value="no" />
+						否
+					</label>
+				</li>
+				<br />
+				<li>
+					<label for="q3">多選題</label><br />
+					<label for="basketball">
+						<input type="checkbox" name="sports" id="basketball" />
+						籃球
+					</label>
+					<label for="soccer">
+						<input type="checkbox" name="sports" id="soccer" />
+						足球
+					</label>
+					<label for="baseball">
+						<input type="checkbox" name="sports" id="baseball" />
+						棒球
+					</label>
+				</li>
+			</ul>
+			<input type="submit" value="送出" />
+		</form>
+	</body>
+</html>

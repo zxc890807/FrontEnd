@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PseudoClass</title>
+		<style>
+			a:visited {
+				/* 點過的網站 */
+				color: rgb(236, 4, 4);
+			}
+			a:link {
+				/* 沒點過的網站 */
+				color: orange;
+			}
+			a:hover {
+				/* 滑鼠懸停在目標上的時候 */
+				color: darkblue;
+				font-size: larger;
+			}
+			a:active {
+				color: black;
+			}
+			li:hover {
+				background-color: gray;
+			}
+			/* not() : 當不是某個狀態的時候會變成紅色， */
+			li:not(:hover) {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://www.google.com/?hl=zh_TW" target="_blank">google</a>
+		<a href="https://www.example.com/">example</a>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+		</ul>
+	</body>
+</html>

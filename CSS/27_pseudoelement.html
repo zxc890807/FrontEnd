@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PseudoElement</title>
+		<style>
+			h1::first-letter {
+				color: blue;
+			}
+			p::first-line {
+				color: red;
+			}
+			p::selection {
+				background-color: gray;
+				color: white;
+			}
+			#apple:before {
+				content: "🍎";
+			}
+			#orange:before {
+				content: "🍊";
+			}
+			#banana:before {
+				content: "🍌";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>PseudoElement</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
+			libero consequatur! Explicabo, nobis. Non delectus cum unde
+			quibusdam exercitationem ut culpa nihil itaque, vero quo facilis,
+			quisquam voluptate. Numquam, omnis.
+		</p>
+		<ul id="fruit">
+			<li id="apple">apple</li>
+			<li id="orange">orange</li>
+			<li id="banana">banana</li>
+		</ul>
+	</body>
+</html>

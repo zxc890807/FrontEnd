@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Font字型</title>
+		<!-- 法1:以下三行link是透過連結到goole font的網站中抓取出網站所提供的字型並帶入HTML中
+            當網站失效的時候也會跟著失效 -->
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+			rel="stylesheet"
+		/> -->
+		<style>
+			/* 法2:在style下 加入@font-face 來宣告會使用到的字型，這個字型可以從google font上下載到local端，
+                /* 解壓縮後得到.ttf檔案，並且將其路徑放置到宣告欄位的url()的括號中，即可使用。 */
+			@font-face {
+				font-family: "Bungee Spice";
+				src: url("./FontFolder/BungeeSpice-Regular.ttf");
+			}
+			h1 {
+				font-family: "Bungee Spice", sans-serif; /* 如果第一個字體找不到會依序往後找並套用 */
+				font-size: 60px; /* 字體大小 , 可用 x em表示 */
+				font-weight: bold; /* 字體粗細 ， 可用數字或是關鍵字表示 */
+				font-style: italic; /*  字型   */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>ABC</h1>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+			impedit unde exercitationem officia vero atque nemo iusto quod.
+			Corporis quo debitis eum ipsam delectus dolore repellendus possimus
+			hic quaerat maiores.
+		</p>
+	</body>
+</html>

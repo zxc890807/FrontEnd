@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>權重</title>
+		<style>
+			#hello {
+				color: green;
+			}
+			#hello {
+				color: red;
+			}
+			.test {
+				color: orange;
+			}
+			p {
+				color: gray;
+			}
+			#demo {
+				color: darkcyan;
+			}
+			#demo_imp {
+				color: magenta !important;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 同權重下，寫在後面的覆蓋前面的 -->
+		<p id="hello">Hello World!</p>
+		<br />
+		<!-- class > 元素 -->
+		<p class="test">Hello World!</p>
+		<br />
+		<!-- id > class -->
+		<p id="demo" class="test">Hello World!</p>
+		<br />
+		<!-- importrant > 所有 -->
+		<p id="demo_imp" class="test" style="color: darkorchid">Hello World!</p>
+	</body>
+</html>
